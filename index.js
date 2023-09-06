@@ -20,7 +20,7 @@ app.get('/', (req, res) =>
 		})
 		.Children
 		([
-			'hola'
+			'Hola'
 			,
 			new View()
 			.Children
@@ -28,9 +28,9 @@ app.get('/', (req, res) =>
 				'Mundo'
 			)
 		])
+		.toString()
 	)
 });
-
 app.listen(3000, () => 
 {
   	console.log('server started');

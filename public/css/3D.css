@@ -1,0 +1,35 @@
+:root
+{
+	--crx: 0;
+	--cry: 0;
+	--crz: 0;
+	
+	--ctx: 0;
+	--cty: 0;
+	--ctz: 0;
+	
+	--orx: 0;
+	--ory: 0;
+	--orz: 0;
+	
+	--otx: 0;
+	--oty: 0;
+	--otz: 0;
+
+	--time: 1s;
+}
+[objeto]
+{
+	-webkit-transition: -webkit-transform var(--time);
+	-webkit-transform:
+	translateX(var(--otx))
+	translateY(var(--oty))
+	translateZ(var(--otz))
+	rotateX(calc(var(--orx) * 1deg))
+	rotateY(calc(var(--ory) * 1deg))
+	rotateZ(calc(var(--orz) * 1deg))
+	scaleX(1)
+	scaleY(1)
+	scaleZ(1)
+	;
+}
